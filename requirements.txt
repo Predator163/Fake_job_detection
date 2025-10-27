@@ -10,3 +10,4 @@ gunicorn
 whitenoise 
 dj-database-url 
 psycopg2-binary
+zwa60(r64t*#lemvmqq-_b1pc-qho&1^3$0z%#3ps$)#12*k!i
