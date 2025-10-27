@@ -4,6 +4,9 @@ import './App.css';
 import JobPostingForm from './components/JobPostingForm';
 import PredictionResult from './components/PredictionResult';
 
+// Add this at the top of your component
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+
 function App() {
   const [prediction, setPrediction] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -15,7 +18,8 @@ function App() {
     setPrediction(null);
 
     try {
-      const response = await axios.post('http://localhost:8000/api/predict/', formData);
+      // Updated API call
+      const response = await axios.post(`${API_BASE_URL}/api/predict/`, formData);
       
       if (response.data.success) {
         setPrediction(response.data.data);
