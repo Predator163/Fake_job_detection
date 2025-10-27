@@ -6,3 +6,7 @@ numpy
 scikit-learn
 joblib
 openpyxl
+gunicorn 
+whitenoise 
+dj-database-url 
+psycopg2-binary
